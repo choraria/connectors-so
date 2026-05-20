@@ -1,0 +1,11 @@
+# Metadata for each connector.
+# The homepage iterates this list to render the connector list.
+# Slugs MUST match the folder name inside _connectors/.
+
+- slug: google-business-profile
+  title: Google Business Profile
+  description: Sync of accounts, locations, reviews, posts, performance metrics, verifications and place action links.
+  links:
+    - { slug: setup-and-usage,  label: Setup }
+    - { slug: privacy-policy,   label: Privacy }
+    - { slug: terms-of-service, label: Terms }

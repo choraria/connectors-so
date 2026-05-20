@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="gbp-pin" x1="12" y1="6" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0"    stop-color="#4285F4"/>
+      <stop offset="0.45" stop-color="#34A853"/>
+      <stop offset="0.8"  stop-color="#FBBC04"/>
+      <stop offset="1"    stop-color="#EA4335"/>
+    </linearGradient>
+    <radialGradient id="gbp-glow" cx="32" cy="22" r="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path
+    d="M32 4C20.954 4 12 12.954 12 24c0 13.5 16.5 33 19.117 35.93a1.2 1.2 0 0 0 1.766 0C35.5 57 52 37.5 52 24 52 12.954 43.046 4 32 4Z"
+    fill="url(#gbp-pin)"/>
+  <path
+    d="M32 4C20.954 4 12 12.954 12 24c0 13.5 16.5 33 19.117 35.93a1.2 1.2 0 0 0 1.766 0C35.5 57 52 37.5 52 24 52 12.954 43.046 4 32 4Z"
+    fill="url(#gbp-glow)"/>
+  <circle cx="32" cy="23" r="9" fill="#ffffff"/>
+  <path d="M28.4 19.6h7.2v6.8h-2.6V22h-2v4.4h-2.6v-6.8Z" fill="#4285F4"/>
+</svg>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{%- assign slug = page.path | split: "/" | slice: 1, 1 | first -%}
+{%- assign current = page.path | split: "/" | last | replace: ".md", "" | replace: ".html", "" -%}
+{%- assign connector = site.data.connectors | where: "slug", slug | first -%}
+<div class="wrap">
+  <a href="/{{ connector.slug }}/" class="back"><span class="arrow">←</span> {{ connector.title }}</a>
+
+  <header class="doc-head">
+    <div class="crumb">
+      <a href="{{ '/' | relative_url }}">connectors.so</a> / <a href="/{{ connector.slug }}/">{{ connector.title }}</a>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.sub %}<p class="sub">{{ page.sub }}</p>{% endif %}
+    {% if page.dates %}<div class="dates">{{ page.dates }}</div>{% endif %}
+  </header>
+
+  {% include connector-tabs.html connector=connector current=current %}
+
+  <div class="doc">
+    {{ content }}
+  </div>
+</div>

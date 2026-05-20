@@ -1,0 +1,47 @@
+title: Connectors.so
+description: Superhuman (formerly Coda) connectors that sync the rest of the web into your docs.
+url: https://www.connectors.so
+baseurl: ""
+
+author:
+  name: Sourabh Choraria
+  url: https://coda.io/@choraria
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+sass:
+  style: compressed
+
+# Collections
+collections:
+  connectors:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: connectors
+    values:
+      layout: connector-page
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - README.md
+  - .github
+
+permalink: pretty
+timezone: UTC

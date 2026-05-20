@@ -1,0 +1,8 @@
+{%- assign c = include.connector -%}
+{%- assign current = include.current | default: "" -%}
+<nav class="subnav" aria-label="Connector pages">
+  <a href="/{{ c.slug }}/"{% if current == "" %} class="active"{% endif %}>Overview</a>
+  <a href="/{{ c.slug }}/setup-and-usage/"{% if current == "setup-and-usage" %} class="active"{% endif %}>Setup</a>
+  <a href="/{{ c.slug }}/privacy-policy/"{% if current == "privacy-policy" %} class="active"{% endif %}>Privacy</a>
+  <a href="/{{ c.slug }}/terms-of-service/"{% if current == "terms-of-service" %} class="active"{% endif %}>Terms</a>
+</nav>

@@ -1,6 +1,6 @@
 # connectors.so
 
-A growing collection of read-only Coda connectors (formerly "Coda Packs"), built by [Sourabh Choraria](https://github.com/choraria).
+A growing collection of Superhuman (formerly Coda) connectors, built by [Sourabh Choraria](https://github.com/choraria).
 
 Live at **<https://www.connectors.so>**.
 

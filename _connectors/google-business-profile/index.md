@@ -1,6 +1,6 @@
 ---
 layout: connector
-title: Google Business Profile
+title: Overview
 sub: A connector that syncs Google Business Profile data into your Superhuman docs.
 description: A connector that syncs Google Business Profile data into your Superhuman docs.
 permalink: /google-business-profile/

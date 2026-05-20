@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Connectors
 description: Superhuman (formerly Coda) connectors that sync the rest of the web into your docs. Built and maintained by Sourabh Choraria.
 ---
 

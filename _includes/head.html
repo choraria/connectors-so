@@ -19,5 +19,25 @@
     })();
   </script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  {% seo %}
+
+  {%- comment -%}
+    Title rule:
+      /                                       → "Connectors"
+      /{connector}/[subpage]/                 → "{Page Title} | {Connector Title}"
+      anything else (e.g. a future /privacy/) → "{Page Title} | connectors.so"
+  {%- endcomment -%}
+  {%- if page.url == "/" -%}
+    {%- assign page_title = "Connectors" -%}
+  {%- elsif page.collection == "connectors" -%}
+    {%- assign slug = page.path | split: "/" | slice: 1, 1 | first -%}
+    {%- assign connector = site.data.connectors | where: "slug", slug | first -%}
+    {%- assign page_title = page.title | append: " | " | append: connector.title -%}
+  {%- else -%}
+    {%- assign page_title = page.title | append: " | connectors.so" -%}
+  {%- endif -%}
+  <title>{{ page_title }}</title>
+  <meta property="og:title" content="{{ page_title }}">
+  <meta name="twitter:title" content="{{ page_title }}">
+
+  {% seo title=false %}
 </head>
